@@ -8,6 +8,9 @@ function mazeDisplay(){
     var canvas = document.getElementById("mycanvas");
     var context = canvas.getContext("2d");
 
+   canvas.height = 770;
+   canvas.width = 1570;
+
     context.fillStyle = "#3b3a38";
     context.fillRect(0,0,1570,770);
 
@@ -30,6 +33,10 @@ function strokeCells(){
     }
 }
 
+
+
+
+
  function cellInfo(i,j,ctx){
     
      this.i = i;
@@ -48,7 +55,7 @@ function strokeCells(){
          ctx.moveTo(x, y);
 		 ctx.lineTo(x+43,y);        
          }
-         //right
+         //rightddd
          if(this.walls[1]){
          ctx.moveTo(x+43, y);
 		 ctx.lineTo(x+43,y+43);
