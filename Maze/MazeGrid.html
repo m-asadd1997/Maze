@@ -1,9 +1,26 @@
 <!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
-        <canvas id="mycanvas"  style="border: 1px solid black">
-        </canvas>
-        <script src="MazeGridJS.js"></script>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Maze</title>
+  </head>
+  <body>
+    <canvas id="mycanvas" height="400" width="400" style="border: 1px solid;"></canvas>
+    <br />
+
+    <!--myFunction()-->
+    <!--<button onclick="myFunction1()" id="mybtn2" style="width: 130px">Stop</button>-->
+    <!--myFunction1()-->
+    <!--<button onclick="window.location.reload()" style="width: 130px">Replay</button>-->
+    <button onclick="forEasy()" style="width: 130px">Easy</button>
+    <button onclick="myFunction()" id="mybtn" style="margin-top: 10px;width: 130px">
+      Moderate
+    </button>
+    <button onclick="forHard()" style="width: 130px">Expert</button>
+    <br />
+    <button onclick="window.location.reload()" style="width: 397px; margin-top: 1%">Replay</button>
+  </body>
+  <script src="MazeGridJS.js"></script>
 </html>
